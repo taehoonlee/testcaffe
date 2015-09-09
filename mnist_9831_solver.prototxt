@@ -1,0 +1,21 @@
+net: "mnist_9831_arch.prototxt"
+solver_mode: GPU
+test_iter: 100
+# Carry out testing every 500 training iterations.
+test_interval: 600
+# Display every 100 iterations
+display: 600
+
+
+
+max_iter: 24000
+# snapshot intermediate results
+#snapshot: 5000
+#snapshot_prefix: "lenet"
+base_lr: 0.03
+momentum: 0.9
+weight_decay: 0.00001
+# The learning rate policy
+lr_policy: "inv"
+gamma: 0.001
+power: 0.5
