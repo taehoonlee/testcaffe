@@ -1,4 +1,4 @@
-net: "mnist_9838_arch.prototxt"
+net: "mnist_9862_arch.prototxt"
 solver_mode: GPU
 test_iter: 100
 # Carry out testing every 500 training iterations.

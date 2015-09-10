@@ -1,4 +1,4 @@
-net: "mnist_9831_arch.prototxt"
+net: "mnist_9863_arch.prototxt"
 solver_mode: GPU
 test_iter: 100
 # Carry out testing every 500 training iterations.
@@ -8,7 +8,7 @@ display: 600
 
 
 
-max_iter: 24000
+max_iter: 48000
 # snapshot intermediate results
 #snapshot: 5000
 #snapshot_prefix: "lenet"
