@@ -1,0 +1,5 @@
+mycaffe.*
+*.txt
+*.h5
+*.caffemodel
+*.solverstate
