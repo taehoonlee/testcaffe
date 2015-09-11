@@ -13,7 +13,7 @@
 <li> `mnist_9867`: 'F:600 - F:600' w dropout </li>
 <li> `mnist_9880`: 'C:12@9x9 - P:2x2' </li>
 <li> `mnist_9923`: 'C:20@5x5 - P:2x2 - C:40@5x5 - P:2x2 - F:1000 - F:1000' </li>
-<li> `mnist_9940`: 'C:20@5x5 - P:2x2 - C:40@5x5 - P:2x2 - F:1000 - F:1000' w dropout </li>
+<li> `mnist_9943`: 'C:20@5x5 - P:2x2 - C:40@5x5 - P:2x2 - F:1000 - F:1000' w dropout </li>
 
 # Results
 
@@ -24,16 +24,16 @@
 | 'F:1000' | 21s | 1s |
 | 'F:600 - F:600' | 22s | 1s |
 | 'C:12@9x9 - P:2x2' | 36s | 10s |
-| 'C:20@5x5 - P:2x2 - C:40@5x5 - P:2x2 <br /> - F:1000 - F:1000' | 3m 23s | 19s |
+| 'C:20@5x5 - P:2x2 <br /> - C:40@5x5 - P:2x2 <br /> - F:1000 - F:1000' | 3m 23s | 19s |
 
 ## test accuracy (10 runs, 40 epochs, relu, SGD)
 
-| Architecture | w/o dropout | w dropout |
-| :----------- | :-------: | --------: |
-| 'F:1000' | 98.509 ![pm](pm.png) 0.042 | 98.633 ![pm](pm.png) 0.061 |
-| 'F:600 - F:600' | 98.626 ![pm](pm.png) 0.061 | 98.678 ![pm](pm.png) 0.048 |
-| 'C:12@9x9 - P:2x2' | 98.807 ![pm](pm.png) 0.038 | - |
-| 'C:20@5x5 - P:2x2 - C:40@5x5 - P:2x2 <br /> - F:1000 - F:1000' | 99.238 ![pm](pm.png) 0.036 | 99.402 ![pm](pm.png) 0.050 |
+| Architecture | w/o dropout | w dropout | w adv | w adv & dropout |
+| :----------- | :---------: | --------: | ----: | --------------: |
+| 'F:1000' | 98.509 ![pm](pm.png) 0.042 | 98.633 ![pm](pm.png) 0.061 | | |
+| 'F:600 - F:600' | 98.626 ![pm](pm.png) 0.061 | 98.678 ![pm](pm.png) 0.048 | | |
+| 'C:12@9x9 - P:2x2' | 98.807 ![pm](pm.png) 0.038 | - | | |
+| 'C:20@5x5 - P:2x2 <br /> - C:40@5x5 - P:2x2 <br /> - F:1000 - F:1000' | 99.238 ![pm](pm.png) 0.036 | 99.433 ![pm](pm.png) 0.072 | 99.360 ![pm](pm.png) 0.045 | 99.437 ![pm](pm.png) 0.048 |
 
 # Results in literatures
 
