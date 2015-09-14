@@ -1,0 +1,22 @@
+net: "mnist_9930_arch.prototxt"
+solver_mode: GPU
+test_iter: 100
+# Carry out testing every 500 training iterations.
+test_interval: 600
+# Display every 100 iterations
+display: 600
+
+
+
+max_iter: 48000
+# snapshot intermediate results
+#snapshot: 24000
+#snapshot_format: HDF5
+#snapshot_prefix: "mnist_9880"
+base_lr: 0.1
+momentum: 0.9
+weight_decay: 0.0001
+# The learning rate policy
+lr_policy: "step"
+gamma: 0.5
+stepsize: 12000
