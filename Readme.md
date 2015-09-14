@@ -14,7 +14,7 @@
 <li> `mnist_9890`: 'C:12@9x9 - P:2x2' </li>
 <li> `mnist_9923`: 'C:20@5x5 - P:2x2 - C:40@5x5 - P:2x2 - F:1000 - F:1000' </li>
 <li> `mnist_9925`: 'C:20@9x9 - P:2x2 - F:1000' </li>
-<li> `mnist_9925`: 'C:20@9x9 - P:2x2 - F:1000' w dropout </li>
+<li> `mnist_9930`: 'C:20@9x9 - P:2x2 - F:1000' w dropout </li>
 <li> `mnist_9943`: 'C:20@5x5 - P:2x2 - C:40@5x5 - P:2x2 - F:1000 - F:1000' w dropout </li>
 
 # Results
