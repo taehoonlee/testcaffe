@@ -1,7 +1,7 @@
 name: "LeNet"
 layer {
   name: "mnist"
-  type: "Data"
+  type: "ImageData"
   top: "data"
   top: "label"
   include {
@@ -10,10 +10,12 @@ layer {
   transform_param {
     scale: 0.00390625
   }
-  data_param {
-    source: "/usr/share/mnist/train_lmdb"
+  image_data_param {
+    source: "/usr/share/mnist/train.txt"
+    is_color: false
     batch_size: 100
-    backend: LMDB
+    shuffle: true
+    rand_skip: 50
   }
 }
 layer {
