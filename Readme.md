@@ -12,9 +12,12 @@
 <li> `mnist_9863`: 'F:1000' w dropout </li>
 <li> `mnist_9869`: 'F:600 - F:600' w dropout </li>
 <li> `mnist_9890`: 'C:12@9x9 - P:2x2' </li>
+<li> `mnist_9913`: 'C:20@9x9 - P:2x2 - F:100' </li>
 <li> `mnist_9923`: 'C:20@5x5 - P:2x2 - C:40@5x5 - P:2x2 - F:1000 - F:1000' </li>
 <li> `mnist_9925`: 'C:20@9x9 - P:2x2 - F:1000' </li>
 <li> `mnist_9930`: 'C:20@9x9 - P:2x2 - F:1000' w dropout </li>
+<li> `mnist_9931`: 'C:20@5x5 - P:2x2 - C:40@5x5 - P:2x2 - F:1000' </li>
+<li> `mnist_9934`: 'C:20@5x5 - P:2x2 - C:40@5x5 - P:2x2 - F:1000' w dropout </li>
 <li> `mnist_9943`: 'C:20@5x5 - P:2x2 - C:40@5x5 - P:2x2 - F:1000 - F:1000' w dropout </li>
 
 # Results
@@ -26,8 +29,9 @@
 | 'F:1000' | 21s | 1s |
 | 'F:600 - F:600' | 22s | 1s |
 | 'C:12@9x9 - P:2x2' | 36s | 10s |
-| 'C:20@9x9 - P:2x2 <br /> - F:1000' | s | s |
-| 'C:20@5x5 - P:2x2 <br /> - C:40@5x5 - P:2x2 <br /> - F:1000 - F:1000' | 3m 23s | 19s |
+| 'C:20@9x9 - P:2x2 <br /> - F:1000' | 1m 45s | 11s |
+| 'C:20@5x5 - P:2x2 <br /> - C:40@5x5 - P:2x2 <br /> - F:1000' | 2m 21s | 18s |
+| 'C:20@5x5 - P:2x2 <br /> - C:40@5x5 - P:2x2 <br /> - F:1000 - F:1000' | 2m 30s | 19s |
 
 ## test accuracy (10 runs, 40 epochs, relu, SGD)
 
@@ -36,7 +40,9 @@
 | 'F:1000' | 98.509 ![pm](pm.png) 0.042 | 98.633 ![pm](pm.png) 0.061 | | |
 | 'F:600 - F:600' | 98.626 ![pm](pm.png) 0.061 | 98.690 ![pm](pm.png) 0.079 | | |
 | 'C:12@9x9 - P:2x2' | 98.901 ![pm](pm.png) 0.086 | - | | |
+| 'C:20@9x9 - P:2x2 <br /> - F:100' | 99.134 ![pm](pm.png) 0.043 |  | | |
 | 'C:20@9x9 - P:2x2 <br /> - F:1000' | 99.249 ![pm](pm.png) 0.045 | 99.302 ![pm](pm.png) 0.044 | | |
+| 'C:20@5x5 - P:2x2 <br /> - C:40@5x5 - P:2x2 <br /> - F:1000' | 99.305 ![pm](pm.png) 0.056 | 99.341 ![pm](pm.png) 0.051 | | |
 | 'C:20@5x5 - P:2x2 <br /> - C:40@5x5 - P:2x2 <br /> - F:1000 - F:1000' | 99.238 ![pm](pm.png) 0.036 | 99.433 ![pm](pm.png) 0.072 | 99.360 ![pm](pm.png) 0.045 | 99.437 ![pm](pm.png) 0.048 |
 
 # Results in literatures

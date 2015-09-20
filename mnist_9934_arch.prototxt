@@ -163,42 +163,6 @@ layer {
     lr_mult: 2
   }
   inner_product_param {
-    num_output: 1000 # 500
-    weight_filler {
-      type: "xavier"
-    }
-    bias_filler {
-      type: "constant"
-    }
-  }
-}
-layer {
-  name: "relu2"
-  type: "ReLU"
-  bottom: "ip2"
-  top: "ip2"
-}
-layer {
-  name: "drop2"
-  type: "Dropout"
-  bottom: "ip2"
-  top: "ip2"
-  dropout_param {
-    dropout_ratio: 0.5
-  }
-}
-layer {
-  name: "ip3"
-  type: "InnerProduct"
-  bottom: "ip2"
-  top: "ip3"
-  param {
-    lr_mult: 1
-  }
-  param {
-    lr_mult: 2
-  }
-  inner_product_param {
     num_output: 10
     weight_filler {
       type: "xavier"
@@ -211,7 +175,7 @@ layer {
 layer {
   name: "accuracy"
   type: "Accuracy"
-  bottom: "ip3"
+  bottom: "ip2"
   bottom: "label"
   top: "accuracy"
   include {
@@ -221,7 +185,7 @@ layer {
 layer {
   name: "loss"
   type: "SoftmaxWithLoss"
-  bottom: "ip3"
+  bottom: "ip2"
   bottom: "label"
   top: "loss"
 }
